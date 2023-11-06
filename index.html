@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Guess That Lyric</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <!-- favicon -->
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <h1 class="intro">
+        Welcome To <span id="guess-that-lyric">Guess That Lyric!</span>
+      </h1>
+      <h2 class="intro">
+        Today, we are going to guess the lyrics to our favorite Ariana Grande
+        songs
+      </h2>
+      <section>
+        <img
+          id="artist-image"
+          class="artist"
+          src="assets/images/ariana-grande.jpg"
+          alt="ariana grande"
+          height="385"
+          width="273"
+        />
+      </section>
+      <form>
+        <fieldset>
+          <legend class="song-list">Song List</legend>
+          <label for="songs">Choose your song:</label>
+          <select name="songs" id="songs">
+            <!-- add default non-selectable value -->
+            <option disabled selected value>Choose a Song</option>
+            <option value="side">Side to Side</option>
+            <option value="seven">7 rings</option>
+            <option value="nasa">NASA</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <p class="selection">Here's the first line to:</p>
+          <p class="first-line"></p>
+          <label for="guess-input">What is the next line?</label>
+          <input type="text" id="guess-input" name="guess-input" />
+        </fieldset>
+        <input id="submit-button" type="submit" value="Submit" />
+      </form>
+      <!-- message -->
+      <div id="message-overlay">
+        <img id="results-gif" src="" height="500" width="370" />
+        <div id="message-box"></div>
+        <button id="play-again-button" style="display: none"></button>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
