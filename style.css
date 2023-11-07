@@ -29,6 +29,9 @@ body {
     hsl(337deg 77% 66%) 100%,
     hsl(339deg 77% 64%) 100%
   );
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* title font */
@@ -43,16 +46,20 @@ body {
   margin-bottom: 25px;
 }
 
+#form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* form */
 form {
   font-size: 1.1rem;
   background-color: rgb(233, 170, 243, 0.2);
   border-radius: 10px;
-  width: 450px;
+  width: 100%;
+  max-width: 450px; 
   padding: 1rem;
-  /* center */
-  margin-left: auto;
-  margin-right: auto;
   box-shadow: var(--shadow-elevation-high);
 }
 
